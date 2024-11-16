@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Website dengan navigasi menu dinamis">
+    <title>Selamat Datang Di Jual Beli Gemblong Kuningan</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('background.jpg'); /* Ganti dengan path gambar yang sesuai */
+            background-size: cover; /* Agar gambar menyesuaikan ukuran layar */
+            background-position: center; /* Pusatkan gambar */
+            background-repeat: no-repeat; /* Tidak mengulang gambar */
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background-color: rgba(229, 219, 29, 0.8); /* Sedikit transparan agar gambar tetap terlihat */
+            color: rgb(0, 0, 0);
+            padding: 1.5rem 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #c2ab00;
+            padding: 1rem;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+        .content {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+        .page {
+            display: none;
+        }
+        .page.active {
+            display: block;
+        }
+        footer {
+            background-color: #a49f0d;
+            color: white;
+            text-align: center;
+            padding: 5px 0;
+            margin-top: 10px;
+            font-size: 0.8rem; /* Ukuran teks di footer lebih kecil */
+        }
+        h2 {
+            color: #b7b112;
+        }
+        p, ul, li {
+            font-size: 1rem; /* Ukuran teks sedikit lebih kecil */
+        }
+        ul {
+            margin: 20px 0;
+            padding: 0;
+            list-style-type: square;
+        }
+        ul li {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Jual Beli Gemblong Kuningan</h1>
+        <p>Selamat datang di website jual beli Gemblong Kuningan!</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a data-page="home">Beranda</a></li>
+            <li><a data-page="about">Tentang</a></li>
+            <li><a data-page="services">Layanan</a></li>
+            <li><a data-page="contact">Kontak</a></li>
+        </ul>
+    </nav>
+    <div id="home" class="page active">
+        <h2>Beranda</h2>
+        <table style="width: 100%; border: 5px solid #ddd; border-collapse: collapse; margin: 20px 0; text-align: left;">
+            <tr>
+                <td style="padding: 20px; font-size: 1.2rem; line-height: 1.8;">
+                    Selamat datang di halaman beranda kami! Kami menyediakan camilan khas Indonesia, Gemblong Kuningan, dengan cita rasa autentik yang memanjakan lidah. Silakan jelajahi website ini untuk mengetahui lebih lanjut tentang produk, layanan, dan keunggulan kami.
+                    <br><br>
+                    Kami berkomitmen untuk memberikan pengalaman terbaik kepada pelanggan dengan menyediakan Gemblong yang dibuat dari bahan-bahan berkualitas tinggi, teknik tradisional, dan rasa yang tak terlupakan. Jangan ragu untuk menghubungi kami jika Anda memiliki pertanyaan atau ingin melakukan pemesanan.
+                    <br><br>
+                    Nikmati pengalaman berbelanja yang mudah melalui Shopee, Tokopedia, atau langsung kunjungi toko kami di Kuningan. Kami siap melayani kebutuhan Anda dengan sepenuh hati!
+                    <br><br>
+                    Gemblong Kuningan mempunyai ciri khas seperti keripik dan mempunyai cita rasa asin.
+                </td>
+            </tr>
+        </table>
+    </div>
+    
+    
+    <div id="about" class="page">
+        <h2>Tentang Gemblong Kuningan</h2>
+        <p>Gemblong adalah salah satu camilan tradisional khas Indonesia, terutama dari Kabupaten Kuningan, Jawa Barat. Gemblong Kuningan dibuat dari ketan berkualitas tinggi dan gula aren asli yang memberikan rasa manis legit khas.</p>
+        
+        <h3>Ciri Khas</h3>
+        <table style="width: 100%; border: 1px solid #ddd; border-collapse: collapse; margin: 20px 0;">
+            <tr style="background-color: #f4f4f4;">
+                <th style="border: 1px solid #ddd; padding: 10px; text-align: left;">Kategori</th>
+                <th style="border: 1px solid #ddd; padding: 10px; text-align: left;">Deskripsi</th>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #ddd; padding: 10px;">Bahan Dasar</td>
+                <td style="border: 1px solid #ddd; padding: 10px;">Menggunakan ketan berkualitas tinggi untuk rasa yang gurih alami.</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #ddd; padding: 10px;">Gula Aren</td>
+                <td style="border: 1px solid #ddd; padding: 10px;">Menggunakan gula lokal yang memberikan aroma khas dan rasa manis mendalam.</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #ddd; padding: 10px;">Teknik Tradisional</td>
+                <td style="border: 1px solid #ddd; padding: 10px;">Dibuat dengan teknik turun-temurun untuk menjaga keasliannya.</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #ddd; padding: 10px;">Ukuran Praktis</td>
+                <td style="border: 1px solid #ddd; padding: 10px;">Cocok untuk camilan sehari-hari atau oleh-oleh.</td>
+            </tr>
+        </table>
+    
+        <p>Gemblong Kuningan mencerminkan rasa kebersahajaan dan kearifan lokal masyarakatnya. Jangan lupa mencicipi camilan ini saat berkunjung ke Kuningan!</p>
+    </div>
+    
+
+    <div id="services" class="page">
+        <h2>Layanan</h2>
+        <table style="width: 100%; border: 1px solid #ddd; border-collapse: collapse; margin: 20px 0;">
+            <tr style="background-color: #f4f4f4;">
+                <th style="border: 1px solid #ddd; padding: 10px; text-align: left;">Metode Layanan</th>
+                <th style="border: 1px solid #ddd; padding: 10px; text-align: left;">Detail</th>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #ddd; padding: 10px;">Via Shopee</td>
+                <td style="border: 1px solid #ddd; padding: 10px;">
+                    <a href="https://shopee.co.id/namaproduk" target="_blank" rel="noopener noreferrer">Gemblong Kuningan</a>
+                </td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #ddd; padding: 10px;">Via Tokopedia</td>
+                <td style="border: 1px solid #ddd; padding: 10px;">
+                    <a href="https://www.tokopedia.com/namaproduk" target="_blank" rel="noopener noreferrer">Kuningan Menyala</a>
+                </td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #ddd; padding: 10px;">Via Offline Store</td>
+                <td style="border: 1px solid #ddd; padding: 10px;">
+                    Jl. Veteran III No. 45, Kadugede, Kabupaten Kuningan, Jawa Barat
+                </td>
+            </tr>
+        </table>
+    </div>
+    
+    
+    <div id="contact" class="page">
+        <h2>Kontak</h2>
+        <p>Hubungi kami melalui WhatsApp untuk pertanyaan atau pemesanan:</p>
+        <p>
+            <a 
+                href="https://wa.me/628985457514" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                style="display: inline-block; padding: 10px 20px; background-color: #25D366; color: white; text-decoration: none; border-radius: 5px; font-weight: bold;">
+                Hubungi via WhatsApp
+            </a>
+        </p>
+    </div>
+    
+
+    <footer>
+        <p>&copy; 2024 Luhaputna Universe. All Rights Reserved.</p>
+    </footer>
+    <script>
+        document.querySelectorAll('nav ul li a').forEach(link => {
+            link.addEventListener('click', function() {
+                const pageId = this.getAttribute('data-page');
+                document.querySelectorAll('.page').forEach(page => page.classList.remove('active'));
+                document.getElementById(pageId).classList.add('active');
+            });
+        });
+    </script>
+</body>
+</html>
